@@ -10,6 +10,7 @@ alias gitd='git diff'
 alias gitp='git push'
 alias gits='git status'
 
+# Generic extraction function
 extract () {
      if [ -f $1 ] ; then
          case $1 in
@@ -29,4 +30,9 @@ extract () {
      else
          echo "'$1' is not a valid compressed/packed file"
      fi
+}
+
+# List the first 20th most useful commands
+cmd_usage () {
+    history | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n20
 }
