@@ -1,3 +1,6 @@
+HISTSIZE=10000
+HISTFILESIZE=20000
+
 # Recursively remove .pyc files
 function rmpyc(){
     find . -name "*.pyc" -exec rm -rf {} \;
