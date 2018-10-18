@@ -39,3 +39,10 @@ extract () {
 cmd_usage () {
     history | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n20
 }
+
+# Create folder anc 'cd' into it.
+function mkcd
+{
+    dir="$*";
+    mkdir -p "$dir" && cd "$dir";
+}
