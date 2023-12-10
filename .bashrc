@@ -118,7 +118,6 @@ fi
 
 #Some stuff
 alias you-get='~/.local/bin/you-get'
-alias update-clamav='sudo /etc/init.d/clamav-freshclam stop;sudo freshclam;sudo /etc/init.d/clamav-freshclam start'
 alias todo='todo-txt'
 alias disk-usage='mate-disk-usage-analyzer'
 alias backlight='bash ~/scripts/backlight.sh'
