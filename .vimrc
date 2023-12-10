@@ -15,3 +15,7 @@ set cursorline
 set cursorcolumn
 " Increase default vim history value (:set history). Default: 50
 set history=10000
+" Disable swap files
+set nobackup
+set nowritebackup
+set noswapfile
