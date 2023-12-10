@@ -13,3 +13,5 @@ syntax on
 " Highlight line and column
 set cursorline
 set cursorcolumn
+" Increase default vim history value (:set history). Default: 50
+set history=10000
