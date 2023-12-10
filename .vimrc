@@ -19,3 +19,5 @@ set history=10000
 set nobackup
 set nowritebackup
 set noswapfile
+" Set encoding
+set encoding=utf-8
